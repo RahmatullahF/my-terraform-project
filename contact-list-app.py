@@ -5,7 +5,7 @@ from flaskext.mysql import MySQL
 # Create an object named app
 app = Flask(__name__)
 
-db_endpoint = open("/home/ec2-user/Contact-List-Application/dbserver.endpoint", 'r', encoding='UTF-8') 
+db_endpoint = open("/home/ec2-user/my-terraform-project/dbserver.endpoint", 'r', encoding='UTF-8') 
 
 # Configure mysql database
 
@@ -165,3 +165,4 @@ if __name__== '__main__':
     init_contact_list_db()
     # app.run(debug=True)
     app.run(host='0.0.0.0', port=80) 
+
